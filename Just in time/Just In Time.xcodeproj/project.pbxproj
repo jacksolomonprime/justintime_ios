@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF5A20FC27AEC8B1002E90B7 /* ConciergeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5A20FB27AEC8B1002E90B7 /* ConciergeApp.swift */; };
+		FF5A20FE27AEC8B1002E90B7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5A20FD27AEC8B1002E90B7 /* LoginView.swift */; };
+		FF5A210027AEC8B3002E90B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF5A20FF27AEC8B3002E90B7 /* Assets.xcassets */; };
+		FF5A210327AEC8B3002E90B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF5A210227AEC8B3002E90B7 /* Preview Assets.xcassets */; };
+		FF5A210A27AECDD7002E90B7 /* LocationManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5A210927AECDD7002E90B7 /* LocationManagerService.swift */; };
+		FF5A212F27AEE077002E90B7 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5A212E27AEE077002E90B7 /* Date+Extension.swift */; };
+		FF5A213127AEE18B002E90B7 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5A213027AEE18B002E90B7 /* UserDefaults+Extension.swift */; };
+		FF5A213327AEE343002E90B7 /* APIManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5A213227AEE343002E90B7 /* APIManagerService.swift */; };
+		FF5A213627AEE532002E90B7 /* CountryPicker in Frameworks */ = {isa = PBXBuildFile; productRef = FF5A213527AEE532002E90B7 /* CountryPicker */; };
+		FF5A213827AEE5BB002E90B7 /* CountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5A213727AEE5BB002E90B7 /* CountryPicker.swift */; };
+		FF5A214127AEF181002E90B7 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5A214027AEF180002E90B7 /* Color+Extension.swift */; };
+		FF5A214327AEFE57002E90B7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5A214227AEFE57002E90B7 /* HomeView.swift */; };
+		FF5A214527AEFEAD002E90B7 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5A214427AEFEAD002E90B7 /* ViewRouter.swift */; };
+		FF5A214827AEFFB1002E90B7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5A214727AEFFB1002E90B7 /* MapView.swift */; };
+		FFC3947527AF3C5600C8C124 /* CurrentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3947427AF3C5600C8C124 /* CurrentView.swift */; };
+		FFC3947727AF3DBF00C8C124 /* LocationSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3947627AF3DBF00C8C124 /* LocationSearchService.swift */; };
+		FFC3947927AF3E6300C8C124 /* LocationSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3947827AF3E6300C8C124 /* LocationSearchResult.swift */; };
+		FFC3947C27AF3EC400C8C124 /* LocationSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3947B27AF3EC400C8C124 /* LocationSearchViewModel.swift */; };
+		FFC3947F27AF408200C8C124 /* UserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3947E27AF408200C8C124 /* UserLocation.swift */; };
+		FFC3948127AFAF2F00C8C124 /* DestinationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3948027AFAF2F00C8C124 /* DestinationDetailView.swift */; };
+		FFC3948427AFAFB100C8C124 /* PhoneEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3948327AFAFB100C8C124 /* PhoneEntry.swift */; };
+		FFC3948627AFBCEB00C8C124 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3948527AFBCEB00C8C124 /* Destination.swift */; };
+		FFC3948827AFC3DE00C8C124 /* FriendPhoneEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3948727AFC3DE00C8C124 /* FriendPhoneEntryView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FF5A20F827AEC8B1002E90B7 /* Just In Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Just In Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF5A20FB27AEC8B1002E90B7 /* ConciergeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConciergeApp.swift; sourceTree = "<group>"; };
+		FF5A20FD27AEC8B1002E90B7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FF5A20FF27AEC8B3002E90B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF5A210227AEC8B3002E90B7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FF5A210927AECDD7002E90B7 /* LocationManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerService.swift; sourceTree = "<group>"; };
+		FF5A210D27AED4EB002E90B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FF5A212E27AEE077002E90B7 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		FF5A213027AEE18B002E90B7 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		FF5A213227AEE343002E90B7 /* APIManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerService.swift; sourceTree = "<group>"; };
+		FF5A213727AEE5BB002E90B7 /* CountryPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPicker.swift; sourceTree = "<group>"; };
+		FF5A214027AEF180002E90B7 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		FF5A214227AEFE57002E90B7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FF5A214427AEFEAD002E90B7 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		FF5A214727AEFFB1002E90B7 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		FFC3947427AF3C5600C8C124 /* CurrentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentView.swift; sourceTree = "<group>"; };
+		FFC3947627AF3DBF00C8C124 /* LocationSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchService.swift; sourceTree = "<group>"; };
+		FFC3947827AF3E6300C8C124 /* LocationSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchResult.swift; sourceTree = "<group>"; };
+		FFC3947B27AF3EC400C8C124 /* LocationSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchViewModel.swift; sourceTree = "<group>"; };
+		FFC3947E27AF408200C8C124 /* UserLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocation.swift; sourceTree = "<group>"; };
+		FFC3948027AFAF2F00C8C124 /* DestinationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationDetailView.swift; sourceTree = "<group>"; };
+		FFC3948327AFAFB100C8C124 /* PhoneEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneEntry.swift; sourceTree = "<group>"; };
+		FFC3948527AFBCEB00C8C124 /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		FFC3948727AFC3DE00C8C124 /* FriendPhoneEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendPhoneEntryView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF5A20F527AEC8B1002E90B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF5A213627AEE532002E90B7 /* CountryPicker in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF5A20EF27AEC8B1002E90B7 = {
+			isa = PBXGroup;
+			children = (
+				FF5A20FA27AEC8B1002E90B7 /* Concierge */,
+				FF5A20F927AEC8B1002E90B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF5A20F927AEC8B1002E90B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF5A20F827AEC8B1002E90B7 /* Just In Time.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF5A20FA27AEC8B1002E90B7 /* Concierge */ = {
+			isa = PBXGroup;
+			children = (
+				FF5A210D27AED4EB002E90B7 /* Info.plist */,
+				FF5A213927AEE5D6002E90B7 /* Delegate */,
+				FFC3947A27AF3E8300C8C124 /* Model */,
+				FFC3947D27AF3EC900C8C124 /* View models */,
+				FF5A213B27AEE5E4002E90B7 /* Views */,
+				FF5A213A27AEE5DD002E90B7 /* Services */,
+				FF5A213D27AEE5EF002E90B7 /* Extension */,
+				FF5A20FF27AEC8B3002E90B7 /* Assets.xcassets */,
+				FF5A210127AEC8B3002E90B7 /* Preview Content */,
+			);
+			path = Concierge;
+			sourceTree = "<group>";
+		};
+		FF5A210127AEC8B3002E90B7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FF5A210227AEC8B3002E90B7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FF5A213927AEE5D6002E90B7 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				FF5A20FB27AEC8B1002E90B7 /* ConciergeApp.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		FF5A213A27AEE5DD002E90B7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FF5A210927AECDD7002E90B7 /* LocationManagerService.swift */,
+				FFC3947627AF3DBF00C8C124 /* LocationSearchService.swift */,
+				FF5A213227AEE343002E90B7 /* APIManagerService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FF5A213B27AEE5E4002E90B7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FF5A214427AEFEAD002E90B7 /* ViewRouter.swift */,
+				FFC3947427AF3C5600C8C124 /* CurrentView.swift */,
+				FF5A214627AEFEB3002E90B7 /* Home view */,
+				FF5A213C27AEE5E9002E90B7 /* Login views */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FF5A213C27AEE5E9002E90B7 /* Login views */ = {
+			isa = PBXGroup;
+			children = (
+				FF5A20FD27AEC8B1002E90B7 /* LoginView.swift */,
+				FFC3948327AFAFB100C8C124 /* PhoneEntry.swift */,
+				FF5A213727AEE5BB002E90B7 /* CountryPicker.swift */,
+			);
+			path = "Login views";
+			sourceTree = "<group>";
+		};
+		FF5A213D27AEE5EF002E90B7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FF5A212E27AEE077002E90B7 /* Date+Extension.swift */,
+				FF5A213027AEE18B002E90B7 /* UserDefaults+Extension.swift */,
+				FF5A214027AEF180002E90B7 /* Color+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		FF5A214627AEFEB3002E90B7 /* Home view */ = {
+			isa = PBXGroup;
+			children = (
+				FF5A214227AEFE57002E90B7 /* HomeView.swift */,
+				FF5A214727AEFFB1002E90B7 /* MapView.swift */,
+				FFC3948227AFAF3700C8C124 /* Detail views */,
+			);
+			path = "Home view";
+			sourceTree = "<group>";
+		};
+		FFC3947A27AF3E8300C8C124 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FFC3947827AF3E6300C8C124 /* LocationSearchResult.swift */,
+				FFC3947E27AF408200C8C124 /* UserLocation.swift */,
+				FFC3948527AFBCEB00C8C124 /* Destination.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FFC3947D27AF3EC900C8C124 /* View models */ = {
+			isa = PBXGroup;
+			children = (
+				FFC3947B27AF3EC400C8C124 /* LocationSearchViewModel.swift */,
+			);
+			path = "View models";
+			sourceTree = "<group>";
+		};
+		FFC3948227AFAF3700C8C124 /* Detail views */ = {
+			isa = PBXGroup;
+			children = (
+				FFC3948027AFAF2F00C8C124 /* DestinationDetailView.swift */,
+				FFC3948727AFC3DE00C8C124 /* FriendPhoneEntryView.swift */,
+			);
+			path = "Detail views";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF5A20F727AEC8B1002E90B7 /* Just In Time */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF5A210627AEC8B3002E90B7 /* Build configuration list for PBXNativeTarget "Just In Time" */;
+			buildPhases = (
+				FF5A20F427AEC8B1002E90B7 /* Sources */,
+				FF5A20F527AEC8B1002E90B7 /* Frameworks */,
+				FF5A20F627AEC8B1002E90B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Just In Time";
+			packageProductDependencies = (
+				FF5A213527AEE532002E90B7 /* CountryPicker */,
+			);
+			productName = Concierge;
+			productReference = FF5A20F827AEC8B1002E90B7 /* Just In Time.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF5A20F027AEC8B1002E90B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					FF5A20F727AEC8B1002E90B7 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = FF5A20F327AEC8B1002E90B7 /* Build configuration list for PBXProject "Just In Time" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF5A20EF27AEC8B1002E90B7;
+			packageReferences = (
+				FF5A213427AEE532002E90B7 /* XCRemoteSwiftPackageReference "CountryPicker" */,
+			);
+			productRefGroup = FF5A20F927AEC8B1002E90B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF5A20F727AEC8B1002E90B7 /* Just In Time */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF5A20F627AEC8B1002E90B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF5A210327AEC8B3002E90B7 /* Preview Assets.xcassets in Resources */,
+				FF5A210027AEC8B3002E90B7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF5A20F427AEC8B1002E90B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF5A214327AEFE57002E90B7 /* HomeView.swift in Sources */,
+				FFC3948427AFAFB100C8C124 /* PhoneEntry.swift in Sources */,
+				FF5A213827AEE5BB002E90B7 /* CountryPicker.swift in Sources */,
+				FF5A20FE27AEC8B1002E90B7 /* LoginView.swift in Sources */,
+				FFC3947C27AF3EC400C8C124 /* LocationSearchViewModel.swift in Sources */,
+				FF5A214827AEFFB1002E90B7 /* MapView.swift in Sources */,
+				FFC3947F27AF408200C8C124 /* UserLocation.swift in Sources */,
+				FF5A212F27AEE077002E90B7 /* Date+Extension.swift in Sources */,
+				FFC3948827AFC3DE00C8C124 /* FriendPhoneEntryView.swift in Sources */,
+				FFC3948627AFBCEB00C8C124 /* Destination.swift in Sources */,
+				FF5A20FC27AEC8B1002E90B7 /* ConciergeApp.swift in Sources */,
+				FFC3948127AFAF2F00C8C124 /* DestinationDetailView.swift in Sources */,
+				FF5A214527AEFEAD002E90B7 /* ViewRouter.swift in Sources */,
+				FFC3947727AF3DBF00C8C124 /* LocationSearchService.swift in Sources */,
+				FF5A213127AEE18B002E90B7 /* UserDefaults+Extension.swift in Sources */,
+				FFC3947927AF3E6300C8C124 /* LocationSearchResult.swift in Sources */,
+				FF5A213327AEE343002E90B7 /* APIManagerService.swift in Sources */,
+				FF5A210A27AECDD7002E90B7 /* LocationManagerService.swift in Sources */,
+				FFC3947527AF3C5600C8C124 /* CurrentView.swift in Sources */,
+				FF5A214127AEF181002E90B7 /* Color+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FF5A210427AEC8B3002E90B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF5A210527AEC8B3002E90B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF5A210727AEC8B3002E90B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Concierge/Preview Content\"";
+				DEVELOPMENT_TEAM = 59CB839785;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Concierge/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Concierge needs your location to determine when you're near your final destination";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Concierge needs your location to determine when you're near your final destination";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.99cents.Concierge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF5A210827AEC8B3002E90B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Concierge/Preview Content\"";
+				DEVELOPMENT_TEAM = 59CB839785;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Concierge/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Concierge needs your location to determine when you're near your final destination";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Concierge needs your location to determine when you're near your final destination";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.99cents.Concierge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF5A20F327AEC8B1002E90B7 /* Build configuration list for PBXProject "Just In Time" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF5A210427AEC8B3002E90B7 /* Debug */,
+				FF5A210527AEC8B3002E90B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF5A210627AEC8B3002E90B7 /* Build configuration list for PBXNativeTarget "Just In Time" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF5A210727AEC8B3002E90B7 /* Debug */,
+				FF5A210827AEC8B3002E90B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FF5A213427AEE532002E90B7 /* XCRemoteSwiftPackageReference "CountryPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mobven/CountryPicker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FF5A213527AEE532002E90B7 /* CountryPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF5A213427AEE532002E90B7 /* XCRemoteSwiftPackageReference "CountryPicker" */;
+			productName = CountryPicker;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FF5A20F027AEC8B1002E90B7 /* Project object */;
+}
